@@ -44,7 +44,7 @@ function Extension() {
   // 3. Render the UI
   return (
     <BlockStack border={"dotted"} padding={"tight"}>
-
+      {/* Used conditional rendering to show the banner */}
       {(showWarningBanner) ? 
       <Banner title="Attention!" status="critical">
       <Text style={{ color: "red" }}>
@@ -67,3 +67,7 @@ function Extension() {
     console.log("applyAttributeChange result", result); // Debug: Check API response
   }
 }
+
+
+
+
